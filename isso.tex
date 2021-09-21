@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by 
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,academicons]{altacv}
+
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage{hyperref}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{003E97}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+%-DOCUMENT-----------------------------------------------------
+\begin{document}
+\name{Cezar Parladore}
+\tagline{}
+\photo{3cm}{me-2}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \location{Rua Helvetia, São Paulo, SP}
+  \email{cezarparladore@outlook.com}
+    \phone{(11) 94401-0004}
+   \linkedin{linkedin.com/in/cezar-parladore}
+    \github{github.com/c-parladore}
+    % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+%-EXPERIENCIA PROFISSIONAL-------------------------
+\cvsection[page1sidebar]{Experiência Profissional}
+
+\cvevent{Assistente Administrativo}{Worley/Advisian}{Jan, 2021-atualmente}{São Paulo}
+\begin{itemize}
+    \item Manipulação, organização e transformação de dados utilizando \textbf{Excel, Power Query, RStudio e Tidyverse}.
+    \item Criação de \textit{dashboards} em \textbf{PowerBI} (desktop e para publicação no PowerBI Service) para visualização de dados ambientais (e.g. resultados analíticos e água e solo, dados de meio físico e descrições de sondagens).
+    \item Tratamento de dados laboratoriais para \textit{input} em banco de dados do\textbf{EQuIS}\faRegistered.
+    \item Elaboração de relatórios de monitoramento de água subterrânea, avaliação de risco à saúde humana, investigação preliminar e testes pilotos de remediação.
+    \item Participou de um projeto piloto de \textbf{fitorremediação} atuando na o\textbf{organização, tratamento e visualização dos dados gerados em 18 campanhas} de amostragem de água e solo.
+    \item Desenho vetorial de perfis de sondagem, seções geológicas e plumas de contaminação no \textbf{Inkscape}.
+
+\end{itemize}
+\divider
+
+
+\cvevent{Estagiário de Meio Ambiente}{Jacobs - Worley}{Fev, 2019 - Dez, 2020}{São Paulo}
+\begin{itemize}
+    \item Realizou \textbf{6 meses de rotatividad}e pelos setores da empresa participando de projetos em saneamento, abastecimento de água, licenciamento ambiental e gerenciamento de áreas contaminadas.
+    \item Auxílio na elaboração de \textbf{relatórios de monitoramento} de água subterrânea, tratamento de dados laboratoriais e de campo e revisão de dados históricos. 
+    \item Vetorização de imagens em GIS.
+    \item Confecção de \textbf{seções geológicas, mapas potenciométricos, plumas de contaminantes} e perfis de sondagem no \textbf{Inkscape}.
+    \item Revisão bibliográfica sobre geologia regional e hidrogeologia para capítulos de relatórios.
+\end{itemize}
+\divider
+
+\begin{fullwidth}
+
+\cvevent{Diretor de RH; 2° Secretário}{GeoJunior Consultoria}{2016-1017}{IGc-USP}
+\begin{itemize}
+    \item Liderou a organização de um processo seletivo de novos membros e participou ativamente na reestruturação administrativa e na renovação da identidade visual da empresa.
+    
+\end{itemize}
+
+
+%-PROJETOS---------------------------------
+\cvsection{Projetos }
+
+\cveventnewf{Avaliação do Uso de Pó de Rocha para Remineralização de Solo no Assentamento Ipanema, Iperó, SP}{Trabalho de Conclusão de Curso}{2021-em andamento}
+\begin{itemize}
+    \item Developed novel \emph{masked punctuation prediction} technique coupled with addition of \texttt{[PAUSE]} tokens,\\achieving state-of-the-art on Multi-Genre Broadcast (MGB) dataset and promising results on the IWSLT 2011 dataset.
+    \item Aiming to publish subset of findings in \emph{ICASS 2022}.
+\end{itemize}
+
+
+\end{fullwidth}
+
+% \cvsection[page2sidebar]{Publications}
+% 
+% \nocite{*}
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+% 
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
